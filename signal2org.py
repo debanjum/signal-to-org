@@ -1,16 +1,32 @@
-import sqlite3
+# Standard Packages
+import argparse
 from datetime import datetime
+import pathlib
+
+# External Packages
+import sqlite3
 
 
 class Conversation:
+    """
+    A Signal Conversation
+    """
     def __init__(self, thread_id) -> None:
         self.thread_id = thread_id
         self.messages = []
 
+
 class User:
+    """
+    A Signal User
+    """
     pass
 
+
 class Message:
+    """
+    A Signal Message
+    """
     def __init__(self, date, body, thread) -> None:
         self.date = date
         self.body = body
@@ -20,34 +36,41 @@ class Message:
     def __repr__(self) -> str:
         return f'[{self.date.strftime("%Y-%m-%d %H:%M")}]: {self.sender}: {self.body}'
 
+
 class SignalVDB:
+    """
+    In-Memory DB. Stores an Intermediate Representation of Signal conversations
+    """
     # contains group, user, message etc
     def __init__(self) -> None:
         self.conversations = [] 
         self.users = []
         self.messages = []
 
-class signal2org:
+
+class Signal:
     """
+    Main Interface to Load, Export Signal Conversations from Backups
     """
 
-    def __init__(self, sqlfile) -> None:
-        #self.backup_file = backup_file
-        # read backup file
-
-        # call signal-to-org to decrypt
-
+    def __init__(self, sqlfile, verbose=0) -> None:
+        # TODO: read backup file amd decrypt it to sqlite
         self.sqlfile = sqlfile
+        self.verbose = verbose
+        self.vdb = self.load_db(self.sqlfile)
 
-
+    def load_db(self, sqlfile):
+        # open connection to sqlite db
+        vdb = SignalVDB()
         conn = sqlite3.connect(sqlfile)
         cur = conn.cursor()
-        #ressms = cur.execute('select * from sms;').fetchall()
+
+        # Get all plain and rich-text Signal messages
         sms = cur.execute('select date, body, thread_id from sms;').fetchall()
         mms = cur.execute('select date, body, thread_id from mms;').fetchall()
-
         messages = sms + mms
-        vdb = SignalVDB()
+
+        # Load Signal data into VDB in an intermediate representation
         for message in messages:
             dt = datetime.utcfromtimestamp(message[0]/1e3)
             thread_id = message[2]
@@ -66,30 +89,31 @@ class signal2org:
                     thread=conversation
                     )
                 )
-        self.vdb = vdb
-
         conn.close()
 
-
-
-        print(sqlfile)
-        exit
-
-        self.signalvdb = None
-        pass
+        return vdb
 
     def export_org(self, outfile):
+        """Create Org File from Virtual DB
+        """
         with open(outfile, 'w') as fout:
             for message in self.vdb.messages:
-                print(f'writing message {message}')
+                if self.verbose > 0:
+                    print(f'writing message {message}')
                 fout.write(f'* {message} \n')
 
-        # uses vdb to create org file
 
+if __name__ == '__main__':
+    # Setup Argument Parser for the Commandline Interface
+    parser = argparse.ArgumentParser(description="An Exporter of Signal Conversations")
+    parser.add_argument('--sql-file', '-i', type=pathlib.Path, required=True, help="Sqlite DB with decrypted Signal conversations")
+    parser.add_argument('--output-file', '-o', type=pathlib.Path, required=True, help="Export file for Signal conversations")
+    parser.add_argument('--verbose', '-v', action='count', default=0, help="Show verbose conversion logs. Default: 0")
+    args = parser.parse_args()
 
+    # Load Signal conversations into In-Memory from Sqlite DB
+    signal = Signal(sqlfile=args.sql_file, verbose=args.verbose)
 
-
-# read backup, outfile
-signal_class = signal2org(sqlfile='data/database.sqlite')
-signal_class.export_org('test.org')
-#signal_class.export_org(outfile)
+    # Export Signal conversations to Org-Mode
+    if args.output_file.suffix == '.org':
+        signal.export_org(args.output_file)
