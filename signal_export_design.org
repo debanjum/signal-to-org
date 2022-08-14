@@ -68,3 +68,12 @@
 
   38 = 2
   762 = 1
+
+* Sender Identification
+- Identify Other Party in Message
+  - SMS > Address
+  - MMS > Address
+- Identify If Message Sent By Self
+  - SMS > Type
+  - MMS > MsgBox
+- 10485783 -> Self As Sender

@@ -2,6 +2,7 @@
 import argparse
 from datetime import datetime
 import pathlib
+from enum import Enum, auto
 
 # External Packages
 import sqlite3
@@ -28,24 +29,33 @@ class Conversation:
     def add_message(self, message: "Message"):
         self.messages.append(message)
 
+    def __repr__(self) -> str:
+        return self.name
+
 
 class User:
     """
     A Signal User
     """
-    def __init__(self) -> None:
-        pass
+    def __init__(self, name) -> None:
+        self.name = name
 
+# create enum class
+class MessageType(Enum):
+    INCOMING = auto()
+    OUTGOING = auto()
+    OTHER = auto()
 
 class Message:
     """
     A Signal Message
     """
-    def __init__(self, date, body, conversation: Conversation) -> None:
+    def __init__(self, date, body, sender, message_type: MessageType, conversation: Conversation) -> None:
         self.date = date
         self.body = body if body else ""
         self.conversation = conversation
-        self.sender = None
+        self.message_type = message_type
+        self.sender = sender
 
     def heading_str(self) -> str:
         body_header = self.body.split('\n')[0]
@@ -84,9 +94,15 @@ class Signal:
         cur = conn.cursor()
 
         # Get all plain and rich-text Signal messages
-        sms = cur.execute('select date, body, thread_id from sms;').fetchall()
-        mms = cur.execute('select date, body, thread_id from mms;').fetchall()
+        sms = cur.execute('select date, body, thread_id, address, type from sms;').fetchall()
+        mms = cur.execute('select date, body, thread_id, address, msg_box from mms;').fetchall()
         messages = sms + mms
+
+        # Create List of Users
+        recipients = cur.execute(f'select _id, system_display_name, group_id from recipient').fetchall()
+        user_dict = dict()
+        for recipient in recipients:
+            user_dict[recipient[0]] = User(recipient[1])
 
         # Create Thread Id to Conversation Name Map
         conversation_name_dict = {}
@@ -102,6 +118,9 @@ class Signal:
 
         # Load Signal data into VDB in an intermediate representation
         for message in messages:
+            # Ignore Non Processable Messages
+            if message[1] == '' or message[1] is None:
+                continue
             dt = datetime.utcfromtimestamp(message[0]/1e3)
             thread_id = message[2]
 
@@ -112,10 +131,22 @@ class Signal:
             else:
                 conversation = conversation[0]
 
+            # Identify Message Sender
+            if message[4] == 10485783:
+                message_type = MessageType.INCOMING
+                sender = "Me"
+            elif message[4] == 10485780:
+                message_type = MessageType.OUTGOING
+                sender = user_dict[message[3]].name
+            else:
+                continue
+
             conversation.add_message(
                 Message(
                     date=dt,
                     body=message[1],
+                    sender = sender,
+                    message_type= message_type,
                     conversation=conversation
                     )
                 )

@@ -1,27 +1,25 @@
 * A
-** [2021-08-20 18:41] None: Ping
+** [2021-08-20 18:41] Me: Ping
 Ping
-** [2021-08-20 18:51] None: Second
+** [2021-08-20 18:51] Me: Second
 Second
-** [2021-08-20 18:52] None: Ping
+** [2021-08-20 18:52] A: Ping
 Ping
-** [2021-08-20 18:52] None: Third
+** [2021-08-20 18:52] A: Third
 Third
-** [2021-08-20 18:52] None: Reply to Second
+** [2021-08-20 18:52] Me: Reply to Second
 Reply to Second
-** [2021-08-20 19:25] None: Image with caption
+** [2021-08-20 19:25] Me: Image with caption
 Image with caption
-** [2021-08-21 03:04] None: https://berthub.eu/articles/posts/what-is-life/
+** [2021-08-21 03:04] Me: https://berthub.eu/articles/posts/what-is-life/
 https://berthub.eu/articles/posts/what-is-life/
-** [2021-08-21 03:05] None: Reply to message with link
+** [2021-08-21 03:05] Me: Reply to message with link
 Reply to message with link
-** [2021-08-21 03:14] None: 
-
-** [2021-08-21 03:16] None: with your testing we might actually end up finding bugs in signal itself :P
+** [2021-08-21 03:16] A: with your testing we might actually end up finding bugs in signal itself :P
 with your testing we might actually end up finding bugs in signal itself :P
-** [2021-08-21 03:16] None: Hahah
+** [2021-08-21 03:16] Me: Hahah
 Hahah
-** [2021-08-21 03:16] None: What Is Life?
+** [2021-08-21 03:16] Me: What Is Life?
 What Is Life?
 
  Posted onDec 30 2019  12 mins read
@@ -33,34 +31,22 @@ And indeed it does appear to be quite a challenge - every hard and fast rule is 
 As fascinating as these discussions are, they are also somewhat silly. It is a bit like a bunch of people standing in an electronics store and pointing at phones, watches, cameras and TVs and asking which of these are computers. They may note that the watch exhibits many phone-like features, and a modern phone is clearly a computer, but most watches can’t actually make calls without a phone nearby. They may also argue that the modern TV is not functional without an internet connection, so does it qualify as a computer? They are sure however that an SD card is not a computer, it only stores data.
 
 Whereas to seasoned technologists this is not even a discussion - all of these things are computers of course, and in fact almost all of them by now run a variant of UNIX. The architecture answers the question for us - all of them have billions of transistors that make up CPU cores, RAM, and there is a operating system that runs on top of these. To us, this is not worth l
-** [2021-08-21 03:21] None: I think I've gone through all the test cases we'd listed
+** [2021-08-21 03:21] Me: I think I've gone through all the test cases we'd listed
 I think I've gone through all the test cases we'd listed
-** [2021-08-21 03:21] None: 😇
+** [2021-08-21 03:21] Me: 😇
 😇
-** [2021-08-21 03:22] None: 
-
 * Signal Backup to OrgMode
-** [2021-08-20 18:40] None: CiQKIDLjbquAChCChsgy2cFJpVtLfKBLudpUsn0770fm0nyzEAAS0QIKENi2wZ4CZENBm6ZKOwPSw7caNgoQ2LbBngJkQ0Gbpko7A9LDtxACGiCsIzGPhRdlil6xIPgpBlOYoj6Vb6dyLMtttz/ltnoYmjpwChD7ygV3h6NIVaZVbHDnSq+wEAEaENi2wZ4CZENBm6ZKOwPSw7cg+sv2prYvKkEAvMODuPU1dgIknMqmrSGAkDgCwtDqFllYb3XAHloFM0OiAdC/BZ5hO/PbJM2c1D50PioIJa/E30wXWZukafRBYDpwChAQkJxJXDlI/Z6ebNidlEx1EAEaENi2wZ4CZENBm6ZKOwPSw7cg+sv2prYvKkEA5HlU/rq6/kEJGq3dF/o/G8CKxEZ4RqYx3Q7qkz0bzGLoHTzYc0wLx+6JxSPzuaLXclSJZFSO8MrOmrNBbMJIDVIaChhTaWduYWwgQmFja3VwIHRvIE9yZ01vZGVoAnACqAECGsACEhhTaWduYWwgQmFja3VwIHRvIE9yZ01vZGUiACoECAIQAjo2ChDYtsGeAmRDQZumSjsD0sO3EAIaIKwjMY+FF2WKXrEg+CkGU5iiPpVvp3Isy223P+W2ehiaQnAKEPvKBXeHo0hVplVscOdKr7AQARoQ2LbBngJkQ0Gbpko7A9LDtyD6y/amti8qQQC8w4O49TV2AiScyqatIYCQOALC0OoWWVhvdcAeWgUzQ6IB0L8FnmE789skzZzUPnQ+Kgglr8TfTBdZm6Rp9EFgQnAKEBCQnElcOUj9np5s2J2UTHUQARoQ2LbBngJkQ0Gbpko7A9LDtyD6y/amti8qQQDkeVT+urr+QQkard0X+j8bwIrERnhGpjHdDuqTPRvMYugdPNhzTAvH7onFI/O5otdyVIlkVI7wys6as0FswkgNYAI=
-CiQKIDLjbquAChCChsgy2cFJpVtLfKBLudpUsn0770fm0nyzEAAS0QIKENi2wZ4CZENBm6ZKOwPSw7caNgoQ2LbBngJkQ0Gbpko7A9LDtxACGiCsIzGPhRdlil6xIPgpBlOYoj6Vb6dyLMtttz/ltnoYmjpwChD7ygV3h6NIVaZVbHDnSq+wEAEaENi2wZ4CZENBm6ZKOwPSw7cg+sv2prYvKkEAvMODuPU1dgIknMqmrSGAkDgCwtDqFllYb3XAHloFM0OiAdC/BZ5hO/PbJM2c1D50PioIJa/E30wXWZukafRBYDpwChAQkJxJXDlI/Z6ebNidlEx1EAEaENi2wZ4CZENBm6ZKOwPSw7cg+sv2prYvKkEA5HlU/rq6/kEJGq3dF/o/G8CKxEZ4RqYx3Q7qkz0bzGLoHTzYc0wLx+6JxSPzuaLXclSJZFSO8MrOmrNBbMJIDVIaChhTaWduYWwgQmFja3VwIHRvIE9yZ01vZGVoAnACqAECGsACEhhTaWduYWwgQmFja3VwIHRvIE9yZ01vZGUiACoECAIQAjo2ChDYtsGeAmRDQZumSjsD0sO3EAIaIKwjMY+FF2WKXrEg+CkGU5iiPpVvp3Isy223P+W2ehiaQnAKEPvKBXeHo0hVplVscOdKr7AQARoQ2LbBngJkQ0Gbpko7A9LDtyD6y/amti8qQQC8w4O49TV2AiScyqatIYCQOALC0OoWWVhvdcAeWgUzQ6IB0L8FnmE789skzZzUPnQ+Kgglr8TfTBdZm6Rp9EFgQnAKEBCQnElcOUj9np5s2J2UTHUQARoQ2LbBngJkQ0Gbpko7A9LDtyD6y/amti8qQQDkeVT+urr+QQkard0X+j8bwIrERnhGpjHdDuqTPRvMYugdPNhzTAvH7onFI/O5otdyVIlkVI7wys6as0FswkgNYAI=
-** [2021-08-20 18:46] None: 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
-** [2021-08-20 18:46] None: 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
-** [2021-08-20 18:47] None: CsoCCiAy426rgAoQgobIMtnBSaVbS3ygS7naVLJ9O+9H5tJ8sxADGqMCCt4BCkEA0uwRF/y8j2yQ+YIUT1dySG/krwbpJQzgByy/wdMuQzGUwgQgw3C+IbNBfGFkneCuqUNsmyK7uGwdocApqH6NLxADOpYBCpMBCkcKQQDkeVT+urr+QQkard0X+j8bwIrERnhGpjHdDuqTPRvMYugdPNhzTAvH7onFI/O5otdyVIlkVI7wys6as0FswkgNEAEoAhJBANLsERf8vI9skPmCFE9Xckhv5K8G6SUM4Acsv8HTLkMxlMIEIMNwviGzQXxhZJ3grqlDbJsiu7hsHaHAKah+jS8Y+baQp7YvEkCm/hpwJosD5q7EymDShKYereFjX6ZLj9fakmR3z1JSBnsQYhi0wQqv84GhrxOVyd9UMnuEH9CXBYMKwYtw7V0FEn8KENi2wZ4CZENBm6ZKOwPSw7cQAzppChAQkJxJXDlI/Z6ebNidlEx1EAEaENi2wZ4CZENBm6ZKOwPSw7cqQQDkeVT+urr+QQkard0X+j8bwIrERnhGpjHdDuqTPRvMYugdPNhzTAvH7onFI/O5otdyVIlkVI7wys6as0FswkgNGoMCEhhTaWduYWwgQmFja3VwIHRvIE9yZ01vZGUiACoECAIQAjADOjYKENi2wZ4CZENBm6ZKOwPSw7cQAhogrCMxj4UXZYpesSD4KQZTmKI+lW+ncizLbbc/5bZ6GJo6OAoQ+8oFd4ejSFWmVWxw50qvsBABGiBH9QY3jj0aR0UucyI5SQ4feyNMcoWnIJM+N8a1PxZ60SgBQmkKEBCQnElcOUj9np5s2J2UTHUQARoQ2LbBngJkQ0Gbpko7A9LDtypBAOR5VP66uv5BCRqt3Rf6PxvAisRGeEamMd0O6pM9G8xi6B082HNMC8fuicUj87mi13JUiWRUjvDKzpqzQWzCSA1gAiKYARIYU2lnbmFsIEJhY2t1cCB0byBPcmdNb2RlIgAqBAgCEAIwAjo2ChDYtsGeAmRDQZumSjsD0sO3EAIaIKwjMY+FF2WKXrEg+CkGU5iiPpVvp3Isy223P+W2ehiaOjgKEPvKBXeHo0hVplVscOdKr7AQARogR/UGN449GkdFLnMiOUkOH3sjTHKFpyCTPjfGtT8WetEoAWAC
-CsoCCiAy426rgAoQgobIMtnBSaVbS3ygS7naVLJ9O+9H5tJ8sxADGqMCCt4BCkEA0uwRF/y8j2yQ+YIUT1dySG/krwbpJQzgByy/wdMuQzGUwgQgw3C+IbNBfGFkneCuqUNsmyK7uGwdocApqH6NLxADOpYBCpMBCkcKQQDkeVT+urr+QQkard0X+j8bwIrERnhGpjHdDuqTPRvMYugdPNhzTAvH7onFI/O5otdyVIlkVI7wys6as0FswkgNEAEoAhJBANLsERf8vI9skPmCFE9Xckhv5K8G6SUM4Acsv8HTLkMxlMIEIMNwviGzQXxhZJ3grqlDbJsiu7hsHaHAKah+jS8Y+baQp7YvEkCm/hpwJosD5q7EymDShKYereFjX6ZLj9fakmR3z1JSBnsQYhi0wQqv84GhrxOVyd9UMnuEH9CXBYMKwYtw7V0FEn8KENi2wZ4CZENBm6ZKOwPSw7cQAzppChAQkJxJXDlI/Z6ebNidlEx1EAEaENi2wZ4CZENBm6ZKOwPSw7cqQQDkeVT+urr+QQkard0X+j8bwIrERnhGpjHdDuqTPRvMYugdPNhzTAvH7onFI/O5otdyVIlkVI7wys6as0FswkgNGoMCEhhTaWduYWwgQmFja3VwIHRvIE9yZ01vZGUiACoECAIQAjADOjYKENi2wZ4CZENBm6ZKOwPSw7cQAhogrCMxj4UXZYpesSD4KQZTmKI+lW+ncizLbbc/5bZ6GJo6OAoQ+8oFd4ejSFWmVWxw50qvsBABGiBH9QY3jj0aR0UucyI5SQ4feyNMcoWnIJM+N8a1PxZ60SgBQmkKEBCQnElcOUj9np5s2J2UTHUQARoQ2LbBngJkQ0Gbpko7A9LDtypBAOR5VP66uv5BCRqt3Rf6PxvAisRGeEamMd0O6pM9G8xi6B082HNMC8fuicUj87mi13JUiWRUjvDKzpqzQWzCSA1gAiKYARIYU2lnbmFsIEJhY2t1cCB0byBPcmdNb2RlIgAqBAgCEAIwAjo2ChDYtsGeAmRDQZumSjsD0sO3EAIaIKwjMY+FF2WKXrEg+CkGU5iiPpVvp3Isy223P+W2ehiaOjgKEPvKBXeHo0hVplVscOdKr7AQARogR/UGN449GkdFLnMiOUkOH3sjTHKFpyCTPjfGtT8WetEoAWAC
-** [2021-08-20 19:10] None: CiQKIDLjbquAChCChsgy2cFJpVtLfKBLudpUsn0770fm0nyzEAQSUgoQEJCcSVw5SP2enmzYnZRMdRAESjwKEBCQnElcOUj9np5s2J2UTHUQARogNIuVyivwESgsGTDMejAoa7bEVRycsAbZ1kWBn5r9kroo/////w8a1gESGFNpZ25hbCBCYWNrdXAgdG8gT3JnTW9kZSIAKgQIAhACMAQ6NgoQ2LbBngJkQ0Gbpko7A9LDtxACGiCsIzGPhRdlil6xIPgpBlOYoj6Vb6dyLMtttz/ltnoYmjo4ChD7ygV3h6NIVaZVbHDnSq+wEAEaIEf1BjeOPRpHRS5zIjlJDh97I0xyhacgkz43xrU/FnrRKAE6PAoQEJCcSVw5SP2enmzYnZRMdRABGiA0i5XKK/ARKCwZMMx6MChrtsRVHJywBtnWRYGfmv2Suij/////D2ACIoMCEhhTaWduYWwgQmFja3VwIHRvIE9yZ01vZGUiACoECAIQAjADOjYKENi2wZ4CZENBm6ZKOwPSw7cQAhogrCMxj4UXZYpesSD4KQZTmKI+lW+ncizLbbc/5bZ6GJo6OAoQ+8oFd4ejSFWmVWxw50qvsBABGiBH9QY3jj0aR0UucyI5SQ4feyNMcoWnIJM+N8a1PxZ60SgBQmkKEBCQnElcOUj9np5s2J2UTHUQARoQ2LbBngJkQ0Gbpko7A9LDtypBAOR5VP66uv5BCRqt3Rf6PxvAisRGeEamMd0O6pM9G8xi6B082HNMC8fuicUj87mi13JUiWRUjvDKzpqzQWzCSA1gAg==
-CiQKIDLjbquAChCChsgy2cFJpVtLfKBLudpUsn0770fm0nyzEAQSUgoQEJCcSVw5SP2enmzYnZRMdRAESjwKEBCQnElcOUj9np5s2J2UTHUQARogNIuVyivwESgsGTDMejAoa7bEVRycsAbZ1kWBn5r9kroo/////w8a1gESGFNpZ25hbCBCYWNrdXAgdG8gT3JnTW9kZSIAKgQIAhACMAQ6NgoQ2LbBngJkQ0Gbpko7A9LDtxACGiCsIzGPhRdlil6xIPgpBlOYoj6Vb6dyLMtttz/ltnoYmjo4ChD7ygV3h6NIVaZVbHDnSq+wEAEaIEf1BjeOPRpHRS5zIjlJDh97I0xyhacgkz43xrU/FnrRKAE6PAoQEJCcSVw5SP2enmzYnZRMdRABGiA0i5XKK/ARKCwZMMx6MChrtsRVHJywBtnWRYGfmv2Suij/////D2ACIoMCEhhTaWduYWwgQmFja3VwIHRvIE9yZ01vZGUiACoECAIQAjADOjYKENi2wZ4CZENBm6ZKOwPSw7cQAhogrCMxj4UXZYpesSD4KQZTmKI+lW+ncizLbbc/5bZ6GJo6OAoQ+8oFd4ejSFWmVWxw50qvsBABGiBH9QY3jj0aR0UucyI5SQ4feyNMcoWnIJM+N8a1PxZ60SgBQmkKEBCQnElcOUj9np5s2J2UTHUQARoQ2LbBngJkQ0Gbpko7A9LDtypBAOR5VP66uv5BCRqt3Rf6PxvAisRGeEamMd0O6pM9G8xi6B082HNMC8fuicUj87mi13JUiWRUjvDKzpqzQWzCSA1gAg==
-** [2021-08-20 19:28] None: First group message
+** [2021-08-20 19:28] Me: First group message
 First group message
-** [2021-08-20 19:28] None: Reply to first group message
+** [2021-08-20 19:28] Me: Reply to first group message
 Reply to first group message
-** [2021-08-20 19:47] None: Reply to your reply to the first group message
+** [2021-08-20 19:47] S: Reply to your reply to the first group message
 Reply to your reply to the first group message
-** [2021-08-20 19:47] None: This is a non sequitor
+** [2021-08-20 19:47] S: This is a non sequitor
 This is a non sequitor
-** [2021-08-21 03:08] None: https://www.cs.virginia.edu/~robins/YouAndYourResearch.html
+** [2021-08-21 03:08] Me: https://www.cs.virginia.edu/~robins/YouAndYourResearch.html
 https://www.cs.virginia.edu/~robins/YouAndYourResearch.html
-** [2021-08-21 03:20] None: * Muller Ratchet.     :READ:UNDERSTAND:
+** [2021-08-21 03:20] Me: * Muller Ratchet.     :READ:UNDERSTAND:
 * Muller Ratchet.     :READ:UNDERSTAND:
    :PROPERTIES:
    :ID: 4242-4242-4242
