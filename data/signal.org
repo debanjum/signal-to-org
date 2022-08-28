@@ -1,52 +1,35 @@
-* A
-** [2021-08-20 18:41] Me: Ping
-Ping
-** [2021-08-20 18:51] Me: Second
-Second
-** [2021-08-20 18:52] A: Ping
-Ping
-** [2021-08-20 18:52] A: Third
-Third
-** [2021-08-20 18:52] Me: Reply to Second
-Reply to Second
-** [2021-08-20 19:25] Me: Image with caption
-Image with caption
-** [2021-08-21 03:04] Me: https://berthub.eu/articles/posts/what-is-life/
-https://berthub.eu/articles/posts/what-is-life/
-** [2021-08-21 03:05] Me: Reply to message with link
-Reply to message with link
-** [2021-08-21 03:16] A: with your testing we might actually end up finding bugs in signal itself :P
-with your testing we might actually end up finding bugs in signal itself :P
-** [2021-08-21 03:16] Me: Hahah
-Hahah
-** [2021-08-21 03:16] Me: What Is Life?
-What Is Life?
-
- Posted onDec 30 2019  12 mins read
-
-What is life? This question keeps many people awake at night and has led to rafts of definitions, some involving features (procreation, metabolism and so forth), some involving chemistry, entropy or energy flux and some are of a more philosophical bent. A BBC article noted there are over 100 definitions of life and it claims all are wrong.
-
-And indeed it does appear to be quite a challenge - every hard and fast rule is violated somewhere in biology. There are things that are clearly alive, but never replicate. Plants typically do not move yet are extremely vital. Viruses do make copies of themselves, but need a host to do so. Are they alive? And once you have it all figured out, some wise person comes up with a crystal that somehow manages to create copies of itself, and points out that these copies even ‘inherit’ characteristics. Is the crystal alive? Similarly, “fire” consumes elements, moves and even replicates. Yet calling fire a life form seems odd.
-
-As fascinating as these discussions are, they are also somewhat silly. It is a bit like a bunch of people standing in an electronics store and pointing at phones, watches, cameras and TVs and asking which of these are computers. They may note that the watch exhibits many phone-like features, and a modern phone is clearly a computer, but most watches can’t actually make calls without a phone nearby. They may also argue that the modern TV is not functional without an internet connection, so does it qualify as a computer? They are sure however that an SD card is not a computer, it only stores data.
-
-Whereas to seasoned technologists this is not even a discussion - all of these things are computers of course, and in fact almost all of them by now run a variant of UNIX. The architecture answers the question for us - all of them have billions of transistors that make up CPU cores, RAM, and there is a operating system that runs on top of these. To us, this is not worth l
-** [2021-08-21 03:21] Me: I think I've gone through all the test cases we'd listed
-I think I've gone through all the test cases we'd listed
-** [2021-08-21 03:21] Me: 😇
-😇
 * Signal Backup to OrgMode
 ** [2021-08-20 19:28] Me: First group message
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T19:28:13.674000
+:END:
 First group message
 ** [2021-08-20 19:28] Me: Reply to first group message
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T19:28:41.719000
+:END:
 Reply to first group message
+[[#2021-08-20T19:28:13.674000][First group message]]
 ** [2021-08-20 19:47] S: Reply to your reply to the first group message
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T19:47:04.203000
+:END:
 Reply to your reply to the first group message
+[[#2021-08-20T19:28:41.719000][Reply to first group message]]
 ** [2021-08-20 19:47] S: This is a non sequitor
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T19:47:36.298000
+:END:
 This is a non sequitor
 ** [2021-08-21 03:08] Me: https://www.cs.virginia.edu/~robins/YouAndYourResearch.html
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:08:39.530000
+:END:
 https://www.cs.virginia.edu/~robins/YouAndYourResearch.html
 ** [2021-08-21 03:20] Me: * Muller Ratchet.     :READ:UNDERSTAND:
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:20:13.652000
+:END:
 * Muller Ratchet.     :READ:UNDERSTAND:
    :PROPERTIES:
    :ID: 4242-4242-4242
@@ -84,3 +67,92 @@ The Collingridge dilemma is a *methodological quandary* in which *efforts to inf
     - A power problem:
       Control or change is difficult when the technology has become entrenched.
         #+end_quote
+* A
+** [2021-08-20 18:41] Me: Ping
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T18:41:40.626000
+:END:
+Ping
+** [2021-08-20 18:51] Me: Second
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T18:51:21.371000
+:END:
+Second
+** [2021-08-20 18:52] A: Ping
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T18:50:37.294000
+:END:
+Ping
+** [2021-08-20 18:52] A: Third
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T18:52:48.972000
+:END:
+Third
+** [2021-08-20 18:52] Me: Reply to Second
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T18:52:54.461000
+:END:
+Reply to Second
+[[#2021-08-20T18:51:21.371000][Second]]
+** [2021-08-20 19:25] Me: Image with caption
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-20T19:25:16.433000
+:END:
+Image with caption
+** [2021-08-21 03:04] Me: https://berthub.eu/articles/posts/what-is-life/
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:04:13.796000
+:END:
+https://berthub.eu/articles/posts/what-is-life/
+** [2021-08-21 03:05] Me: Reply to message with link
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:05:09.887000
+:END:
+Reply to message with link
+[[#2021-08-21T03:04:13.796000][https://berthub.eu/articles/posts/what-is-life/]]
+** [2021-08-21 03:14] Me: 
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:14:00.809000
+:END:
+
+** [2021-08-21 03:16] A: with your testing we might actually end up finding bugs in signal itself :P
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:16:03.327000
+:END:
+with your testing we might actually end up finding bugs in signal itself :P
+** [2021-08-21 03:16] Me: Hahah
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:16:34.716000
+:END:
+Hahah
+[[#2021-08-21T03:16:03.327000][with your testing we might actually end up finding bugs in signal itself :P]]
+** [2021-08-21 03:16] Me: What Is Life?
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:16:40.183000
+:END:
+What Is Life?
+
+ Posted onDec 30 2019  12 mins read
+
+What is life? This question keeps many people awake at night and has led to rafts of definitions, some involving features (procreation, metabolism and so forth), some involving chemistry, entropy or energy flux and some are of a more philosophical bent. A BBC article noted there are over 100 definitions of life and it claims all are wrong.
+
+And indeed it does appear to be quite a challenge - every hard and fast rule is violated somewhere in biology. There are things that are clearly alive, but never replicate. Plants typically do not move yet are extremely vital. Viruses do make copies of themselves, but need a host to do so. Are they alive? And once you have it all figured out, some wise person comes up with a crystal that somehow manages to create copies of itself, and points out that these copies even ‘inherit’ characteristics. Is the crystal alive? Similarly, “fire” consumes elements, moves and even replicates. Yet calling fire a life form seems odd.
+
+As fascinating as these discussions are, they are also somewhat silly. It is a bit like a bunch of people standing in an electronics store and pointing at phones, watches, cameras and TVs and asking which of these are computers. They may note that the watch exhibits many phone-like features, and a modern phone is clearly a computer, but most watches can’t actually make calls without a phone nearby. They may also argue that the modern TV is not functional without an internet connection, so does it qualify as a computer? They are sure however that an SD card is not a computer, it only stores data.
+
+Whereas to seasoned technologists this is not even a discussion - all of these things are computers of course, and in fact almost all of them by now run a variant of UNIX. The architecture answers the question for us - all of them have billions of transistors that make up CPU cores, RAM, and there is a operating system that runs on top of these. To us, this is not worth l
+** [2021-08-21 03:21] Me: I think I've gone through all the test cases we'd listed
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:21:08.979000
+:END:
+I think I've gone through all the test cases we'd listed
+** [2021-08-21 03:21] Me: 😇
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:21:56.195000
+:END:
+😇
+** [2021-08-21 03:22] Me: 
+:PROPERTIES:
+:CUSTOM_ID: 2021-08-21T03:22:34.927000
+:END:
+
