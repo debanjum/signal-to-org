@@ -18,6 +18,7 @@ class Conversation:
         self.messages = []
         self.name = name
         self.current_users = []
+        print('constructing conversation')
 
     def export(self, indent=0):
         ret = ""
@@ -28,6 +29,11 @@ class Conversation:
             ret += f"{message.body}\n"
             if message.parent:
                 ret += f"[[#{message.parent.date_sent.isoformat()}][{message.parent.body_header}]]\n"
+            if message.descendants:
+                ret += f"{'*'*(indent+2)} Replies\n"
+                for descendant in message.descendants:
+                    ret += f"[[#{descendant.date_sent.isoformat()}][{descendant.body_header}]]\n"
+
         return ret
 
     def add_message(self, message: "Message"):
@@ -68,6 +74,7 @@ class Message:
         conversation: Conversation,
         parent: "Message",
     ) -> None:
+        print("construction message")
         self.date_received = date_received
         self.date_sent = date_sent
         self.body = body if body else ""
@@ -75,6 +82,10 @@ class Message:
         self.message_type = message_type
         self.sender = sender
         self.parent = parent
+        self.children = []
+
+        if self.parent:
+            self.parent.children.append(self)
 
     @property
     def body_header(self):
@@ -85,6 +96,13 @@ class Message:
 
     def __repr__(self) -> str:
         return f'[{self.date_received.strftime("%Y-%m-%d %H:%M")}]: {self.sender}: {self.body}'
+
+    @property
+    def descendants(self):
+        ret2 = self.children
+        for child in self.children:
+            ret2 += child.descendants
+        return ret2
 
 
 class SignalVDB:
@@ -217,6 +235,11 @@ class Signal:
     def export_org(self, outfile):
         """Create Org File from Virtual DB"""
         with open(outfile, "w") as fout:
+            print('hello')
+            print('hello')
+            print('hello')
+            print('hello')
+            print('hello')
             for conversation in self.vdb.conversations:
                 fout.write(conversation.export(indent=1))
 
