@@ -18,7 +18,6 @@ class Conversation:
         self.messages = []
         self.name = name
         self.current_users = []
-        print('constructing conversation')
 
     def export(self, indent=0):
         ret = ""
@@ -74,7 +73,6 @@ class Message:
         conversation: Conversation,
         parent: "Message",
     ) -> None:
-        print("construction message")
         self.date_received = date_received
         self.date_sent = date_sent
         self.body = body if body else ""
@@ -99,10 +97,10 @@ class Message:
 
     @property
     def descendants(self):
-        ret2 = self.children
+        ret = self.children.copy()
         for child in self.children:
-            ret2 += child.descendants
-        return ret2
+            ret += child.descendants
+        return ret
 
 
 class SignalVDB:
@@ -235,11 +233,6 @@ class Signal:
     def export_org(self, outfile):
         """Create Org File from Virtual DB"""
         with open(outfile, "w") as fout:
-            print('hello')
-            print('hello')
-            print('hello')
-            print('hello')
-            print('hello')
             for conversation in self.vdb.conversations:
                 fout.write(conversation.export(indent=1))
 
